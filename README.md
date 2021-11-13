@@ -1,6 +1,6 @@
 # Adivina-el-numero-funciones
 https://github.com/claudiaalozano/Adivina-el-numero-funciones.git
-``import random
+```import random
 MIN= 0
 MAX= 0
 intentos= 0
@@ -46,4 +46,4 @@ while True:
         print("El número es más pequeño.")
     else:
         intento= intento + 1
-        print("Enhorabuena, ha superado el juego con exito y con " + intento + "intentos")``
+        print("Enhorabuena, ha superado el juego con exito y con " + intento + "intentos")```
