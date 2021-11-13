@@ -1,6 +1,7 @@
 import random
 MIN= 0
 MAX= 0
+intentos= 0
 while True:
     nivel=input("Seleccione un nivel entre fácil, medio, difícil o legendario: ")
     if nivel=="fácil":
@@ -20,17 +21,27 @@ while True:
         MAX= 99999
         break
 numero=random.randint(MIN,MAX)
-
-def numero_elegido (invitación):
+def numero_elegido (invitacion):
+    invitacion += "entre" + str(MIN) + "y" + str(MAX) + ":"
+    numero2= int(invitacion)
+    try:
+        numero2= int(numero2)
+    except:
+        pass
     while True:
         numero2= int(input("Por favor seleccione un número: "))
-        if minimo<=numero2<=maximo:
-            minimo=minimo + 1
-            maximo=maximo - 1
-    while numero != numero2:
-        if numero < numero2:
-            print("El número introducido es grande, vuelva a intentarlo.")
-        if numero > numero2:
-            print("El número introducido es pequeño, vuelva a intentarlo.")
-        if numero == numero2:
-            print("Ha ganado el juego.")
+        if MIN<=numero2<=MAX:
+            break
+    return
+print("Comencemos:")
+while True:
+    oportunidad= numero_elegido("Adivine el número")
+    if oportunidad < numero:
+        intento= intento + 1
+        print("El número es más grande.")
+    if oportunidad > numero: 
+        intento= intento + 1
+        print("El número es más pequeño.")
+    else:
+        intento= intento + 1
+        print("Enhorabuena, ha superado el juego con exito y con " + intento + "intentos")
