@@ -1,14 +1,15 @@
-nivel= int(input("Por favor selecciona un nivel entre fácil, medio, díficil y legendario: "))
-while nivel==facil:
+import random
+while True: 
+nivel=(input("Por favor selecciona un nivel entre fácil, medio, díficil y legendario: "))
+ if nivel=="fácil":
     MIN= 0
     MAX= 99
-    def numero 
- while nivel==medio:
+ if  nivel=="medio":
      MIN: 0
      MAX: 999
-while nivel==dificil:
+ if nivel=="díficil":
     MIN: 0
     MAX: 9999
-while nivel==legendario:
+ if nivel=="legendario":
     MIN: 0
-    MAX: 999999
+    MAX:999999
