@@ -46,4 +46,4 @@ while True:
         print("El número es más pequeño.")
     else:
         intento= intento + 1
-        print("Enhorabuena, ha superado el juego con exito y con " + intento + "intentos")´´
+        print("Enhorabuena, ha superado el juego con exito y con " + intento + "intentos")``
