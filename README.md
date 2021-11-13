@@ -1,5 +1,7 @@
 # Adivina-el-numero-funciones
 https://github.com/claudiaalozano/Adivina-el-numero-funciones.git
+
+MI CÓDIGO ES:
 ```import random
 MIN= 0
 MAX= 0
